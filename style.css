@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Sedgwick+Ave');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+p{
+    text-indent: 20px;
+}
+header {
+    width: 100%;
+    background-color: #354981;
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    margin: 15px 30px;
+    font-size: 2.5em;
+    color:white;
+    font-family: 'Sedgwick Ave', cursive;
+}
+button {
+    font-size: 1.75em;
+    background-color: #BAD0F3;
+    color: #35497F;
+    width: 140px;
+    height: 50px;
+    border-radius: 150px;
+    margin: auto 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    outline: none;
+}
+ul {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background-color: #C6C9C1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    font-size: 50px;
+    text-align: center;
+
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color:#354981;
+}
+li:hover {
+    position: relative;
+    background-color: #e1e1e0;
+    color: #354981;
+    }
+li:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 33%;
+    left: 110%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #354981;
+    border-bottom: 10px solid transparent;
+
+}
+.home:hover::after {
+    font-size: 0.5em;
+    content: "Home";
+    position: absolute;
+    top: 10%;
+    left: 85px;
+    background: #354981;
+    color: #eee;
+    padding: 10px 20px;
+    z-index: 2;
+}
+.portfolio:hover::after {
+    font-size: 0.5em;
+    content: "Portfolio";
+    position: absolute;
+    top: 10%;
+    left: 85px;
+    background: #354981;
+    color: #eee;
+    padding: 10px 20px;
+    z-index: 2;
+}
+.contacs:hover::after {
+    font-size: 0.5em;
+    content: "Contacs";
+    position: absolute;
+    top: 10%;
+    left: 85px;
+    background: #354981;
+    color: #eee;
+    padding: 10px 20px;
+    z-index: 2;
+
+}
+.help:hover::after {
+    font-size: 0.5em;
+    content: "Help";
+    position: absolute;
+    top: 10%;
+    left: 85px;
+    background: #354981;
+    color: #eee;
+    padding: 10px 20px;
+    z-index: 2;
+}
+.text {
+    position: absolute;
+    margin: -10% 10%;
+    padding-top: 10%;
+    font-size: 20px;
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+#home {
+    display: block;
+}
+.text {
+    display: none;
+}
+.text:target {
+     display: block;
+}
+#portfolio:target ~ #home, #contacs:target ~ #home, #help:target ~ #home {
+    display:none;
+}
+
+
+
+
